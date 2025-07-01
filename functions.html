@@ -4,8 +4,20 @@
     <link rel="stylesheet" type="text/css"  href="style.css" >
 </head>
 <body>
-    <h1 onclick="innerHTML ='jovis'"">JAVASCRIPT</h1>
+    <h1 id="heading" onclick="changeText()">JAVASCRIPT</h1>
+    <p id="addition"></p>
     <script>
+        document.getElementById("addition").innerHTML =  addNumbers(10, 72);
+
+        function changeText(){
+            if(document.getElementById("heading").innerHTML =='JAVASCRIPT'){
+                document.getElementById("heading").innerHTML ='JOVIS'} 
+            else {document.getElementById("heading").innerHTML ='JAVASCRIPT'}
+        }
+
+        function addNumbers(num1, num2){
+           return num1 + num2;
+        }
 
     </script>
 
